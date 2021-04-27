@@ -44,7 +44,7 @@ M2LO13 Demonstrate how CSS can change presentation of textual elements
     Fonts, text size and text colors have been set using CSS
 
 M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
-    Utilized color name, RGB and HSL values to describe font colors. If viewed on older browsers, color should be the same
+    Utilized RGB and HSL values to describe font colors. If viewed on older browsers, color should be the same
     
 M2LO15 Apply colors using CSS
     Both page background and font colors were set using CSS instead of HTML
@@ -56,7 +56,6 @@ M2LO15 Apply colors using CSS
 body {
     color: darkmagenta;
     color: rgb(139, 0, 139);
-    color: hsl(300, 100%, 27.25%);
     font-family: Tahoma, sans-serif;
 }
 
