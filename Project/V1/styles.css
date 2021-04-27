@@ -9,7 +9,7 @@
 This stylesheet has been created to change the appearance of the pages found on my project website.
 
 The rendered pages don't look great, but this is version 1.0 after all. Focus was put on incorporating elements and styles rather than content and aesthetics.
-More content will be coming. Hopefully it'll look pretty by the time V4 rolls out.
+More content will be coming. Hopefully it'll look pretty by the time V4 rolls out. Layout will change dramatically once I understand how to utilize it fully.
 
 
 Learning outcomes featured in this stylesheet: 
@@ -27,8 +27,8 @@ M2LO5 Demonstrate contextual selectors
     The ordered list text color has been changed using contextual selectors
 
 M2LO6  Demonstrate a CSS id and a CSS class selector
-    ID: Paragraph ID "about" was used to adjust font size of a particular paragraph
-    Class: UL class "fluff" was used to change text color
+    ID: Section ID "about" was used to adjust font size of a particular section
+    Class: OL class "fluff" was used to change text color
 
 M2LO7 Demonstrate a CSS attribute selector other than class or id
     Used "href contains" to select a hyperlink attribute based on a word it contained
@@ -44,7 +44,7 @@ M2LO13 Demonstrate how CSS can change presentation of textual elements
     Fonts, text size and text colors have been set using CSS
 
 M2LO14 Demonstrate and explain the use of progressive enhancement in CSS
-    Utilized color name, RGB and HSL values to describe font colors
+    Utilized color name, RGB and HSL values to describe font colors. If viewed on older browsers, color should be the same
     
 M2LO15 Apply colors using CSS
     Both page background and font colors were set using CSS instead of HTML
@@ -54,8 +54,9 @@ M2LO15 Apply colors using CSS
 /* HTML and Body Styles*/
 
 body {
-    color: rgb(215, 0, 215);
-    color: hsl(200, 240%, 101%);
+    color: darkmagenta;
+    color: rgb(139, 0, 139);
+    color: hsl(300, 100%, 27.25%);
     font-family: Tahoma, sans-serif;
 }
 
@@ -81,9 +82,14 @@ a[href~="virginia"] {
 
 /* Section Styles */
 
-
+section#about {
+    font-size: larger;
+}
 
 /* List Styles */
+
+
+}
 ul ol {
     color: blueviolet
 }
@@ -102,11 +108,15 @@ ol > li:nth-of-type(odd) {
 
 ul {
     list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    font-family: Tahoma;
 }
 
-dl {
-    list-style-type: none;
+ul > li {
+    margin: 5px 0px;
 }
+
 
 
 /* Article Styles */
@@ -116,16 +126,16 @@ dl {
 
 /* Aside Styles */
 
+aside {
+    text-align: center;
+}
 
 
 
 /* Paragraph Styles */
 p {
+    font-family: Tahoma;
     color:seagreen
-}
-
-p#about {
-    font-size: larger;
 }
 
 p::first-letter {
