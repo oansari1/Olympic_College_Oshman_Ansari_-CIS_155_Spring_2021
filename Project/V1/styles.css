@@ -55,7 +55,7 @@ M2LO15 Apply colors using CSS
 
 body {
     color: rgb(215, 0, 215);
-    color: hsl(200, 240, 101);
+    color: hsl(200, 240%, 101%);
     font-family: Tahoma, sans-serif;
 }
 
