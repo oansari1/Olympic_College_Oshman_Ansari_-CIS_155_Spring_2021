@@ -30,14 +30,14 @@ M2LO6  Demonstrate a CSS id and a CSS class selector
     Class: UL class "fluff" was used to change text color
 
 M2LO7 Demonstrate a CSS attribute selector other than class or id
-    Used alt attribute to select image element(s) to align to center
+    Used "href contains" to select a hyperlink attribute based on a word it contained
 
 M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector
     Pseudo-class: Selected even and odd OL elements to modify separately
     Pseudo-element: Selected first letter of paragraph elements to enlarge
 
 M2LO12 Demonstrate how CSS can change presentation of page elements
-    Image alignment was changed using CSS instead of HTML
+    CSS was used to remove markers from list items
 
 M2LO13 Demonstrate how CSS can change presentation of textual elements
     Fonts, text size and text colors have been set using CSS
@@ -74,6 +74,9 @@ nav > ul > li > a {
     text-decoration: none;
 }
 
+a[href~="virginia"] {
+    color: gold
+}
 
 /* Section Styles */
 
@@ -96,7 +99,21 @@ ol > li:nth-of-type(odd) {
     font: normal 1.2em impact;
 }
 
+ul {
+    list-style-type: none;
+}
+
+dl {
+    list-style-type: none;
+}
+
+
 /* Article Styles */
+
+
+
+
+/* Aside Styles */
 
 
 
@@ -114,12 +131,6 @@ p::first-letter {
     font-size: 125%;
 }
 
+
 /* Image Styles */
-
-img[alt~=welcome] {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 
